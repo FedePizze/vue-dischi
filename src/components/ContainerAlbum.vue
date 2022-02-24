@@ -8,11 +8,12 @@
 
         <div v-if="aaa == true">
             <div class="row">
-                <CardAlbum
+                <div class="box"
                     v-for="(album, index) in arreyAlbum"
-                    :key="index.id"
-                    :album="album">
-                </CardAlbum>
+                    :key="index.id">
+                    <CardAlbum :album="album"></CardAlbum>
+                </div>
+                
             </div>
         </div>
     </div>
@@ -82,6 +83,14 @@ export default {
             justify-content: center;
             background-color: #1e2d3b;
             padding: 40px 300px;
+        }
+
+        .box{
+            width: calc(100% / 6);
+            text-align: center;
+            background-color: #2e3a46;
+            padding: 15px;
+            margin: 10px;
         }
     }
 </style>
