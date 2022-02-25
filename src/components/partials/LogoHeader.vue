@@ -4,7 +4,10 @@
 
 <script>
 export default {
-    name: "LogoHeader"
+    name: "LogoHeader",
+    props: {
+        
+    }
 }
 </script>
 
