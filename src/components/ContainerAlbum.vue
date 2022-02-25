@@ -102,7 +102,7 @@ export default {
             background-color: #2e3a46;
             padding: 15px;
             margin: 10px;
-            height: 260px;
+            max-height: 350px;
         }
 
         #red{
